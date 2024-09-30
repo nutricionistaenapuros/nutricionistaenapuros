@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista en Apuros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #add8e6;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #004080;
+        }
+        nav {
+            background-color: #87ceeb;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #004080;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #004080;
+        }
+        .resenas {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-left: 5px solid #add8e6;
+        }
+        footer {
+            background-color: #add8e6;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #add8e6;
+        }
+        button {
+            background-color: #004080;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nutricionista en Apuros</h1>
+        <p>Bienvenidos a mi página personal</p>
+    </header>
+
+    <nav>
+        <a href="#trabajo">Mi Trabajo</a>
+        <a href="#reservar">Reservar Citas</a>
+        <a href="#resenas">Reseñas</a>
+    </nav>
+
+    <section id="trabajo">
+        <h2>Sobre Mí y Mi Trabajo</h2>
+        <p>Soy un dietista-nutricionista apasionado por ayudar a mis pacientes a llevar un estilo de vida más saludable. A través de la nutrición personalizada, me enfoco en lograr cambios que perduren en el tiempo.</p>
+        <p>En esta página podrás encontrar información sobre mis servicios, reservar citas y leer las reseñas de mis pacientes.</p>
+    </section>
+
+    <section id="reservar">
+        <h2>Reservar una Cita</h2>
+        <form action="https://calendly.com/" method="get" target="_blank">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+            
+            <label for="mensaje">Mensaje (Opcional):</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Déjame un mensaje..."></textarea>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <section id="resenas">
+        <h2>Reseñas de Pacientes</h2>
+        <div class="resenas">
+            <p>"Gracias a su plan de nutrición, he logrado cambios que nunca pensé posibles. Altamente recomendado!" - <strong>María P.</strong></p>
+            <p>"Muy profesional y siempre atento a las necesidades de cada paciente." - <strong>Carlos G.</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nutricionista en Apuros. Todos los derechos reservados.</p>
+        <p>Sígueme en <a href="https://www.instagram.com/nutricionista.en.apuros/?hl=es" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+</html>
